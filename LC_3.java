@@ -29,7 +29,7 @@ public class LC_3 {
         return maxLen;
     }
 
-    //此方法还未运行通------运行痛了，问题同23行注释
+    //此方法还未运行通------运行通了，问题同23行注释
     public int lengthOfLongestSubstring_2(String s) {
         int maxLen = 0;
         if (s.length() == 0) return 0;

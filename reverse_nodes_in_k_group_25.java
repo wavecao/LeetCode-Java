@@ -1,5 +1,7 @@
 package com.cheerway.leetcode;
 
+import java.util.List;
+
 /**
  * <pre>
  * 25. k个一组反转链表 Hard
@@ -49,6 +51,7 @@ public class reverse_nodes_in_k_group_25 {
             //迭代k次，找出需要反转的部分
             for (int i = 0; i < k && end != null; ++i)
                 end = end.next;
+            //剩余节点不足k个，就不反转了
             if (end == null) break;
             //需要反转的部分的开始
             ListNode start = pre.next;
@@ -89,4 +92,5 @@ public class reverse_nodes_in_k_group_25 {
         }
         return preNode;
     }
+
 }
