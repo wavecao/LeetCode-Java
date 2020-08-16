@@ -1,7 +1,13 @@
-class Solution {
+package com.cheerway.leetcode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class game24 {
+
     public boolean judgePoint24(int[] nums) {
         //加油
-        List<Double>nowNums = new ArrayList<>();
+        List<Double> nowNums = new ArrayList<>();
         for(int num:nums)
             nowNums.add((double)num);
         return dfs(nowNums);

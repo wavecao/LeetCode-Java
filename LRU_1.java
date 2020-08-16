@@ -143,5 +143,7 @@ public class LRU_1 {
         }
         //添加节点
         addRecently(key, value);
+        
     }
+
 }
