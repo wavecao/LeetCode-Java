@@ -9,6 +9,7 @@ package com.cheerway.leetcode;
  * @since : 2020-08-08  19:52
  */
 public class LC_121 {
+    //动态规划
     public int maxProfit(int[] prices) {
         int len = prices.length;
         int maxRes = 0;
@@ -21,6 +22,7 @@ public class LC_121 {
         return maxRes;
     }
 
+    //贪心算法
     public int maxProfit_1(int[] prices) {
         int minPrice = Integer.MAX_VALUE;
         int maxProfit = 0;
