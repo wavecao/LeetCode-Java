@@ -1,3 +1,5 @@
+package com.cheerway.leetcode;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
  
@@ -8,7 +10,7 @@ public class TestWeightRobin {
         ipMap.put("192.168.13.1",1);
         ipMap.put("192.168.13.2",2);
         ipMap.put("192.168.13.3",4);
- 
+
     }
     Integer pos=0;
     public String WeightRobin(){
