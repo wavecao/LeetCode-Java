@@ -16,7 +16,7 @@ public class Combinations_77 {
     List<List<Integer>> res = new ArrayList<>();
     public List<List<Integer>> combine(int n, int k) {
         if (n <= 0 || k <= 0 || n < k) return res;
-        List<Integer> track = new ArrayList<>();
+        //List<Integer> track = new ArrayList<>();
         backtrack(n, k, 1, new Stack<>());
         return res;
     }
@@ -32,5 +32,11 @@ public class Combinations_77 {
             backtrack(n, k, i+1, track);
             track.pop();
         }
+    }
+
+    public static void main(String[] args) {
+        int n = 4;
+        int k = 2;
+        new Combinations_77().combine(n, k);
     }
 }
